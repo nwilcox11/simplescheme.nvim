@@ -60,7 +60,7 @@ Group.link('Function', g.Normal)
 Group.link('Exception', g.Execptions)
 Group.link('Keyword', g.Keyword)
 Group.link('Include', g.Keyword)
-Group.link('Delimiter', g.Misc)
+Group.link('Delimiter', g.Keyword)
 Group.link('Conditional', g.Keyword)
 
 -- Treesitter highlight groups -- :h nvim-treesitter-highlights
@@ -75,6 +75,7 @@ Group.link('TSKeywordOperator', g.Methods)
 Group.link('TSRepeat', g.Keyword)
 Group.link('TSPunctBracket', g.TypeLabel)
 Group.link('TSKeywordReturn', g.Execptions)
+Group.link('TSOperator', g.Keyword)
 
 -- Editor Groups
 Group.new('IncSearch', c.none, c.none, s.reverse)
