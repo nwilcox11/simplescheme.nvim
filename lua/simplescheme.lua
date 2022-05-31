@@ -4,14 +4,13 @@ vim.g.colors_name = 'simplescheme'
 
 Color.new('dark_blue', '#2e3440')
 Color.new('white', '#Eceff4')
+Color.new('mid_white', '#d8dee9')
 Color.new('snow', '#D8Dee9')
 Color.new('light_snow', '#e5e9f0')
 Color.new('blue', '#5e81ac')
 Color.new('light_blue', '#81a1c1')
 Color.new('blue_green', '#88c0d0')
 Color.new('turquoise', '#8fbcbb') -- types
-
-Group.new('blue07', c.turquoise)
 
 Color.new('red', '#bf616a')
 Color.new('orange', '#d08770')
@@ -37,13 +36,14 @@ Group.new('Warning', c.orange, c.none, s.none)
 
 -- Basic Groups
 Group.new('Header', c.white, c.none, s.none)
-Group.new('Normal', c.white, c.none, s.none)
+Group.new('Normal', c.mid_white, c.none, s.none)
 Group.new('Noise', c.dark, c.none, s.none)
 Group.new('Comment', c.dark, c.none, s.italic)
 Group.new('String', c.green, c.none, s.none)
 Group.new('MethodCall', c.grey, c.none, s.none)
 Group.new('Keyword', c.light_blue, c.none, s.none)
 Group.new('TypeLabel', c.turquoise, c.none, s.italic)
+Group.new('PuncBracket', c.turquoise, c.none, s.none)
 Group.new('Methods', c.turquoise)
 Group.new('Execptions', c.purple)
 
@@ -73,7 +73,7 @@ Group.link('TSInclude', g.Keyword)
 Group.link('TSMethod', g.Methods)
 Group.link('TSKeywordOperator', g.Methods)
 Group.link('TSRepeat', g.Keyword)
-Group.link('TSPunctBracket', g.TypeLabel)
+Group.link('TSPunctBracket', g.PuncBracket)
 Group.link('TSKeywordReturn', g.Execptions)
 Group.link('TSOperator', g.Keyword)
 
